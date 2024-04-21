@@ -1,0 +1,396 @@
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Helvetica", "Arial Narrow", Arial, sans-serif, Geneva, Tahoma,
+    sans-serif;
+}
+.header {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 20px 100px;
+}
+#logo {
+  text-decoration: none;
+  color: aqua;
+  font-weight: 750;
+  font-size: 36px;
+}
+
+.logo:hover {
+  color: aqua;
+}
+
+.head-nav > a {
+  text-decoration: none;
+  font-size: 36;
+  font-weight: 650;
+  color: white;
+  margin-left: 50px;
+  padding-left: 25px;
+}
+
+.head-nav a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: aqua;
+  text-decoration-thickness: 0.17em;
+}
+
+.sub-nav > a {
+  text-decoration: none;
+  font-size: 36;
+  font-weight: 650;
+  color: black;
+  margin-left: 50px;
+  padding-left: 25px;
+}
+
+.sub-nav a:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: aqua;
+  text-decoration-thickness: 0.17em;
+}
+
+.containerHome {
+  width: 100%;
+  min-height: 95vh;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)),
+    url(/images/pngtree-street-full-of-homes-as-blue-sky-shines-through-the-windows-image_2569284.jpg)
+      no-repeat;
+  background-size: 100% 100vh;
+}
+.main-text1 {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  margin-top: 140px;
+  margin-bottom: 0;
+  font-size: 80px;
+}
+
+.main-text2 {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+footer {
+  min-height: 5vh;
+  background-color: rgb(68, 66, 66);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+footer p {
+  text-decoration: none;
+  font-size: 10;
+  font-weight: 100;
+  color: white;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+.table {
+  min-height: 81vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.house-pic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px auto;
+  text-align: center;
+  width: 100px;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.home-paragraph {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.filter-button {
+  background-color: aqua;
+  margin: 10px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-text {
+  margin: 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.form {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: red;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-text {
+  font-size: 25px;
+  font-weight: 400px;
+}
+
+.form-text {
+  padding-bottom: 10px;
+}
+
+.scroll-arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.arrow {
+  width: 125px;
+  height: 125px;
+}
+
+.about-container {
+  min-height: 83.5vh;
+  padding: 20px;
+}
+
+.about-header {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.containerAbout {
+  width: 100%;
+  min-height: 95vh;
+  background: url(/images/about3.png) no-repeat;
+  background-size: 100% 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about-nav {
+  color: black;
+}
+
+.Nav {
+  text-align: center;
+}
+
+.Nav .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.Nav .logo {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Nav .head-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav .about-nav {
+  color: black;
+  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-header {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section-content {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.moreButton {
+  width: 30px;
+  position: absolute;
+}
+.moreButton:hover {
+  cursor: pointer;
+}
+
+.house-detail-pic {
+  width: 50%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.house-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center content horizontally */
+  min-height: 100vh; /* Ensure the container fills the viewport height */
+}
+
+.content-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items at the start */
+  width: 100%;
+  max-width: 1000px; /* Adjust as needed */
+  margin-top: 20px; /* Add margin between header and content */
+}
+
+.image-and-text-container {
+  width: 70%; /* Adjust as needed */
+  max-width: 800px; /* Adjust as needed */
+  padding-right: 20px; /* Add spacing between image/text and map */
+  box-sizing: border-box; /* Include padding in width calculation */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.house-detail-pic {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 10%; /* Adjust as needed */
+  align-self: flex-start; /* Align map to the top */
+  position: absolute;
+}
+
+.map{
+  top: 10;
+  left: 550;
+  max-width: 40%;
+  max-height: 62.5%;
+  }
+
+  .footer-details{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+ 
+
