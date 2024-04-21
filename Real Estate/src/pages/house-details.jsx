@@ -12,7 +12,7 @@ const HouseDetails = () => {
     const fetchHouseDetails = async () => {
       try {
         const response = await fetch(
-          "https://685c2149-6f11-441f-97d9-3b1fdc253994.mock.pstmn.io/properties"
+          "https://b59b889f-5c7e-4f3b-9ac6-4abdcf66b5bf.mock.pstmn.io/properties"
         );
         const data = await response.json();
         const house = data.find((house) => house.id === id);
@@ -27,7 +27,10 @@ const HouseDetails = () => {
 
   if (!houseDetails) return <div>Loading...</div>;
 
-  const { pic, cost, details, location, contactPhoneNumber } = houseDetails;
+  const { pic, cost, details, location, contactPhoneNumber, latitude, longitude } = houseDetails;
+  
+  console.log("Latitude:", latitude);
+  console.log("Longitude:", longitude);
 
   return (
     <div className="house-details-container">
@@ -42,7 +45,11 @@ const HouseDetails = () => {
             <h4>Contact Phone Number: {contactPhoneNumber}</h4>
           </div>
         </div>
-        <GoogleMap />
+        {isNaN(latitude) || isNaN(longitude) ? (
+          <div>Error: Invalid coordinates</div>
+        ) : (
+          <GoogleMap latitude={latitude} longitude={longitude} />
+        )}
       </div>
       <div className="footer-details">
         <Footer />

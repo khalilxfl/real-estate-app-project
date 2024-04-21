@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import more from "./more.png";
 
-const Card = ({ id, pic, cost, details, location }) => {
+const Card = ({ id, pic, cost, details, location, latitude, longitude }) => {
   return (
     <div className="card">
       <Link to={"/houses/" + id}>

@@ -12,7 +12,7 @@ const Table = () => {
 
   const fetchProperties = async () => {
     try {
-      const response = await fetch('https://685c2149-6f11-441f-97d9-3b1fdc253994.mock.pstmn.io/properties');
+      const response = await fetch('https://b59b889f-5c7e-4f3b-9ac6-4abdcf66b5bf.mock.pstmn.io/properties');
       const data = await response.json();
       setProperties(data);
     } catch (error) {
@@ -47,6 +47,9 @@ const Table = () => {
             cost={property.cost}
             details={property.details}
             location={property.location}
+            latitude={property.latitude}
+            longitude={property.longitude}
+
           />
         ))}
       </div>
