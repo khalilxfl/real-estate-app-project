@@ -1,9 +1,24 @@
 ### Real Estate App Description
 
-This is a real estate web application built using React and Vite. The app utilizes a postman mock API to make calls for property listings. The Google Maps API is used to show locations of the properties on a map.
+This is a full-stack real estate web application built using React and Vite for the frontend and an Express.js server for the backend. The app utilizes a postman mock API to make calls for property listings. The Google Maps API is used to show locations of the properties on a map.
+
+### Features
+- **Form Verification**: Ensure data integrity with client-side form validation.
+- **Filtering Options**: Easily refine property search results based on criteria such as bedrooms.
+- **Property Listings**: View detailed information about available properties.
+- **Interactive Map**: Utilize Google Maps API integration to visually locate properties.
+- **Mock API Integration**: Utilize a Postman mock API for realistic property data.
+- **Server-Side Communication**: Interact with the server via localhost to access additional information.
+- **Details Page**: Access additional property information and location details by clicking on property images. The map shows up to provide a visual representation of the property's location.
+- **Single-Page Application**: Seamlessly navigate between different views without page reloads.
+- **Routing**: Implement client-side routing with React Router for a smooth user experience.
+- **Component-Based Architecture**: Build a modular application using React components for efficient development and maintenance.
+- **Props Passing**: Pass data and functionality between components using props for a cohesive user experience.
 
 ### Demo
 ![Demo2](https://github.com/khalilxfl/real-estate-app-project/assets/139386338/700cc4e5-4cee-4f85-8a07-315669c59c5a)
+
+A smoother demo can be found at: https://imgur.com/5jyZzjM.gif
 
 ### How to Run
 
@@ -23,3 +38,5 @@ This is a real estate web application built using React and Vite. The app utiliz
 7. **Start the Server**:
    - Run `npm run dev` in the server terminal window. This should start the server on port 5000.
    - You can view the information in the server by typing `http://localhost:5000/api` in your browser.
+### Note:
+You will need a JavaScript Google API key to utilize the Google Maps feature. Place the API key in the map component's placeholder.
