@@ -40,3 +40,20 @@ A smoother demo can be found at: https://imgur.com/5jyZzjM.gif
    - You can view the information in the server by typing `http://localhost:5000/api` in your browser.
 ### Note:
 You will need a JavaScript Google API key to utilize the Google Maps feature. Place the API key in the map component's placeholder.
+
+## License
+
+    Copyright [2024] [Khalil McFarlane]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
