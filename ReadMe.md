@@ -4,7 +4,8 @@ This is a real estate web application built using React and Vite. The app utiliz
 The Google Maps API is used to show locations of the properties on a map.
 
 Demo
-![Alt text](https://imgur.com/5jyZzjM.gif)
+![Demo2](https://github.com/khalilxfl/real-estate-app-project/assets/139386338/700cc4e5-4cee-4f85-8a07-315669c59c5a)
+
 How to Run
 To run the app, follow these steps:
 
